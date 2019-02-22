@@ -142,7 +142,7 @@ while True:
         decision = 'Sell!!!'
         message = client.messages.create(to="whatsapp:+918655078690", from_="whatsapp:+14155238886", body=decision+' - Price of Bitcoin is expected to drop.')
     else:
-        decision = ''
+        decision = 'Hold!!!'
     prev = yhat_inverse[0][0]
     input_string = "INSERT INTO live_data values ({},{},{},'{}','{}');".format(yhat_inverse[0][0],bit_data[0][0],sent_data[4][0],datetime.datetime.now(tz=est).strftime('%Y-%m-%d %H:%M:%S'),decision)
     cursor.execute(input_string)
