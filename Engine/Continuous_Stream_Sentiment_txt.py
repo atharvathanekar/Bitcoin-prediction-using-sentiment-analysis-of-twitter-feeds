@@ -36,8 +36,8 @@ def main():
         sentiment = np.mean(polarity)
 
         # save sentiment data to csv file
+        f.write(str(sentiment)+",")
         f.write(datetime.datetime.now().strftime("%y%m%d%H%M"))
-        f.write(","+str(sentiment))
         f.write("\n")
         f.flush()
         time.sleep(60)
