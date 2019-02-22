@@ -14,7 +14,6 @@ keys = ["price_usd"]
 vals = [0]*len(keys)
 
 while True:
-    f.write(datetime.datetime.now().strftime("%y%m%d%H%M"))
     data = requests.get("https://api.coinmarketcap.com/v1/ticker/bitcoin/").json()[0] 
 	
     for d in data.keys():
@@ -22,9 +21,8 @@ while True:
             indx = keys.index(d)
             vals[indx] = data[d]
     for val in vals:
-        f.write(","+val)
-      
+        f.write(val+",")
+    f.write(datetime.datetime.now().strftime("%y%m%d%H%M"))  
     f.write("\n")
     f.flush()
     time.sleep(60)
-
