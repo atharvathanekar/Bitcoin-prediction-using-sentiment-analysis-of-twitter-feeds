@@ -1,0 +1,29 @@
+body{font-family: 'Montserrat Regular', arial;font-family: 'Roboto Regular', serif;
+
+font-size: 14px;line-height: 12.56px;color: #8e8c8c;background: #fff; }
+
+
+/*banner*/
+.banner_img { padding: 0; }
+.banner_img img{position: relative;  }
+.text { position: absolute; top: 60px; left: 480px; color:#fff; text-align: center; text-transform: uppercase;}
+.text h1 span{ font-weight: bold; }
+
+/*sign-up*/
+.sign-up{ padding-top: 42px; background: #fff; }
+
+.sign-in label{ text-transform: uppercase; font-size: 9.99px;}
+.sign-in input[type=email]{ padding: 8px 300px 8px 8px; margin-bottom: 22px; }
+.sign-in input[type=password]{ padding: 8px 300px 8px 8px; margin-bottom: 22px;}
+.sign-in button{outline: none;  cursor: pointer; text-transform: uppercase;padding: 16px 23px; background: #fff; border: 1px solid #9c9c9c;  }
+.sign-in button:hover{ color: #fff; background: #00c8c8;transition: 0.5s all;  }
+.sign-in a{ margin-left: 228px; cursor: pointer; font-size: 20px; color:#00c8c8; }
+.register input[type=checkbox] { float: left; margin: 0; margin-bottom: 22px;}
+.register p{font-size: 12px; float: right;margin-right: 195px; }
+.register button:hover{ color: #fff; background: #00c8c8; }
+.register label{ text-transform: uppercase; font-size: 9.99px;}
+.register input[type=email]{ padding: 8px 300px 8px 8px; margin-bottom: 22px; }
+.register input[type=password]{ padding: 8px 300px 8px 8px; margin-bottom: 22px;}
+.register button{outline: none; cursor: pointer;float: left;  text-transform: uppercase;padding: 16px 23px; background: #fff; border: 1px solid #9c9c9c;  }
+.register button:hover{ color: #fff; background: #00c8c8; transition: 0.5s all; }
+.register h4{ float: right; font-size: 13px;}
